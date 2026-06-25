@@ -1,0 +1,40 @@
+# Custom Linux Distribution Report — Part 1
+
+## General Information
+* Developer: PATIN COTACACHI RAFAEL ALEXANDRE
+* Base OS: Ubuntu 24.04.4 LTS (Noble Numbat)
+* Generation Date: 2026-06-25
+
+---
+
+## ISO Download and Verification
+* Download Link: https://drive.google.com/file/d/11HdAZHv6kOFGyHo4dCXdqz5MJmD_Q3Ri/view?usp=sharing
+* MD5 Checksum: dfa07646a501c0446620ca4fc4ceceaf
+
+### Technical Specifications
+* File Name: ubuntu-24.04.4-2026.06.25-desktop-amd64.iso
+* Volume ID: Ubuntu 24.04.4 2026.06.25 LTS
+* Compression Algorithm: XZ (Optimized for size)
+* Final Size: 5.50 GiB (5,901,291,520 bytes)
+
+---
+
+## List of Modifications and Justifications
+
+1. Software Replacement: Celluloid to MPV
+* Modification: Replaced the default stock media player with mpv.
+* Justification: The default media player was removed and MPV was installed. MPV is a lightweight, efficient, and highly customizable open-source alternative that minimizes CPU and RAM resource consumption, with superior codec support ideal for systems administration environments.
+
+2. Pre-installation of Development Tools (Neovim)
+* Modification: Integrated and pre-installed the advanced text editing environment Neovim.
+* Justification: Neovim was incorporated directly into the base ISO along with its basic dependencies. This ensures that the system provides an agile, resource-efficient development editor ready for scripting and Unix administration tasks from the first boot without relying on external repositories.
+
+3. Persistent Customization of the Default User Environment via /etc/skel
+* Modification: Configured a persistent custom welcome banner within the command interpreter.
+* Justification: The master file '/etc/skel/.bashrc' was edited to add optimized global aliases ('ll') and a personalized welcome message in English. This guarantees that any new user account created automatically inherits these configurations persistently, establishing a distinct operating system identity for administrative auditing and direct developer recognition.
+
+---
+
+## Deliverables and Verification
+* Demonstration Video: Included as UNIX.mp4 in the project directory.
+* Boot Test Status: Successfully verified and tested on Oracle VirtualBox, running perfectly in a clean Live session using the "Try Ubuntu" mode.
